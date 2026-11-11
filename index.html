@@ -2,367 +2,436 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ZHAARA PARFUM. Perfumes 100% originales y gafas deportivas premium.">
-  <title>ZHAARA PARFUM | An Essence of Mystery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root {
-      --black: #090909;
-      --dark: #141414;
-      --gold: #c9a45c;
-      --light-gold: #ead39c;
-      --white: #f8f5ee;
-      --gray: #aaa49a;
-    }
+<title>ZHAARA PARFUM | An Essence of Mystery</title>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta name="description" content="ZHAARA PARFUM. Perfumes 100% originales, perfumes árabes, diseñador, nicho, decants y gafas deportivas premium. Compra con atención personalizada y consulta pagos con Addi.">
 
-    html { scroll-behavior: smooth; }
+<style>
+:root {
+  --black: #080808;
+  --dark: #131313;
+  --gold: #c9a45c;
+  --gold-light: #f0d69d;
+  --white: #f8f5ee;
+  --gray: #aaa49a;
+}
 
-    body {
-      background: var(--black);
-      color: var(--white);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    a { text-decoration: none; color: inherit; }
+html { scroll-behavior: smooth; }
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(9,9,9,.96);
-      border-bottom: 1px solid rgba(201,164,92,.3);
-      padding: 15px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
 
-    .brand {
-      color: var(--gold);
-      font-family: Georgia, serif;
-      font-size: 25px;
-      font-weight: bold;
-      letter-spacing: 3px;
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    .brand small {
-      display: block;
-      font: 9px Arial, sans-serif;
-      letter-spacing: 4px;
-      text-align: center;
-      color: var(--white);
-    }
+/* ENCABEZADO */
 
-    nav {
-      display: flex;
-      gap: 25px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8,8,8,.97);
+  border-bottom: 1px solid rgba(201,164,92,.4);
+  padding: 8px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
 
-    nav a {
-      font-size: 13px;
-      color: var(--white);
-      transition: .3s;
-    }
+.brand img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+}
 
-    nav a:hover { color: var(--gold); }
+nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-    .hero {
-      min-height: 590px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 80px 20px;
-      background:
-        linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.85)),
-        url("https://images.unsplash.com/photo-1541643600914-78b084683601?w=1800")
-        center/cover no-repeat;
-    }
+nav a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: .3s;
+}
 
-    .hero-content { max-width: 850px; }
+nav a:hover { color: var(--gold); }
 
-    .eyebrow {
-      color: var(--gold);
-      letter-spacing: 5px;
-      font-size: 12px;
-      margin-bottom: 22px;
-    }
+/* PORTADA */
 
-    .hero h1 {
-      font-family: Georgia, serif;
-      color: var(--gold);
-      font-size: clamp(42px, 8vw, 82px);
-      letter-spacing: 5px;
-      line-height: 1.1;
-    }
+.hero {
+  min-height: 590px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 20px;
+  background:
+    linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1800")
+    center/cover no-repeat;
+}
 
-    .slogan {
-      font-family: Georgia, serif;
-      letter-spacing: 5px;
-      font-size: 14px;
-      margin: 18px 0 35px;
-    }
+.hero-content { max-width: 850px; }
 
-    .hero p {
-      color: #e2ded6;
-      font-size: 16px;
-      margin-bottom: 30px;
-    }
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 13px 27px;
-      background: var(--gold);
-      color: #111;
-      font-weight: bold;
-      font-size: 13px;
-      letter-spacing: 1px;
-      border: 1px solid var(--gold);
-      transition: .3s;
-    }
+.hero h1 {
+  font-family: Georgia, serif;
+  color: var(--gold);
+  font-size: clamp(42px,8vw,82px);
+  letter-spacing: 4px;
+  line-height: 1.1;
+}
 
-    .btn:hover {
-      background: transparent;
-      color: var(--gold);
-    }
+.slogan {
+  font-family: Georgia,serif;
+  letter-spacing: 5px;
+  font-size: 14px;
+  margin: 20px 0;
+}
 
-    section { padding: 85px 7%; }
+.hero p {
+  color: #e2ded6;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
-    }
+.btn {
+  display: inline-block;
+  padding: 13px 28px;
+  background: var(--gold);
+  color: #111;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border: 1px solid var(--gold);
+  transition: .3s;
+}
 
-    .section-title span {
-      color: var(--gold);
-      font-size: 11px;
-      letter-spacing: 4px;
-    }
+.btn:hover {
+  background: transparent;
+  color: var(--gold);
+}
 
-    .section-title h2 {
-      font-family: Georgia, serif;
-      font-size: clamp(30px, 5vw, 43px);
-      font-weight: normal;
-      margin-top: 8px;
-    }
+/* SECCIONES */
 
-    .section-title p {
-      color: var(--gray);
-      margin-top: 10px;
-      font-size: 14px;
-    }
+section { padding: 80px 7%; }
 
-    .gold-line {
-      width: 65px;
-      height: 2px;
-      background: var(--gold);
-      margin: 18px auto;
-    }
+.section-title {
+  text-align: center;
+  margin-bottom: 42px;
+}
 
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
+.section-title span {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 4px;
+}
 
-    .category {
-      background: var(--dark);
-      border: 1px solid #30291d;
-      padding: 35px 20px;
-      text-align: center;
-      transition: .3s;
-    }
+.section-title h2 {
+  font-family: Georgia,serif;
+  font-size: clamp(29px,5vw,43px);
+  font-weight: normal;
+  margin-top: 8px;
+}
 
-    .category:hover {
-      transform: translateY(-6px);
-      border-color: var(--gold);
-    }
+.section-title p {
+  color: var(--gray);
+  margin-top: 10px;
+  font-size: 14px;
+}
 
-    .category .symbol {
-      font-size: 35px;
-      margin-bottom: 15px;
-    }
+.gold-line {
+  width: 65px;
+  height: 2px;
+  background: var(--gold);
+  margin: 18px auto;
+}
 
-    .category h3 {
-      color: var(--gold);
-      font-family: Georgia, serif;
-      font-size: 21px;
-      margin-bottom: 10px;
-    }
+/* CATEGORÍAS */
 
-    .category p {
-      font-size: 13px;
-      color: var(--gray);
-    }
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+}
 
-    .decants {
-      background: #15130f;
-      text-align: center;
-      border-top: 1px solid #332b1d;
-      border-bottom: 1px solid #332b1d;
-    }
+.category {
+  background: var(--dark);
+  border: 1px solid #392f20;
+  padding: 35px 20px;
+  text-align: center;
+  transition: .3s;
+}
 
-    .decant-options {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
-      margin: 30px 0;
-    }
+.category:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+}
 
-    .decant {
-      border: 1px solid var(--gold);
-      padding: 25px 45px;
-      min-width: 145px;
-    }
+.symbol {
+  font-size: 35px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
 
-    .decant strong {
-      display: block;
-      color: var(--gold);
-      font-size: 30px;
-      font-family: Georgia, serif;
-    }
+.category h3 {
+  color: var(--gold);
+  font-family: Georgia,serif;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
 
-    .glasses {
-      background: #0d1012;
-    }
+.category p {
+  color: var(--gray);
+  font-size: 13px;
+}
 
-    .glasses-banner {
-      max-width: 950px;
-      min-height: 300px;
-      margin: auto;
-      padding: 50px 25px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background:
-        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
-        url("https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=1400")
-        center/cover no-repeat;
-      border: 1px solid #4d412b;
-    }
+/* DECANTS */
 
-    .glasses-banner h2 {
-      font-family: Georgia, serif;
-      color: var(--gold);
-      font-size: 38px;
-      margin-bottom: 12px;
-    }
+.decants {
+  background: #15130f;
+  text-align: center;
+  border-top: 1px solid #332b1d;
+  border-bottom: 1px solid #332b1d;
+}
 
-    .glasses-banner p {
-      margin-bottom: 25px;
-      max-width: 500px;
-    }
+.decant-options {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
 
-    .benefits {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      text-align: center;
-    }
+.decant {
+  border: 1px solid var(--gold);
+  padding: 25px 45px;
+  min-width: 150px;
+}
 
-    .benefit {
-      padding: 20px;
-    }
+.decant strong {
+  display: block;
+  color: var(--gold);
+  font-size: 32px;
+  font-family: Georgia,serif;
+}
 
-    .benefit h3 {
-      color: var(--gold);
-      margin: 12px 0 8px;
-      font-size: 17px;
-    }
+/* GAFAS */
 
-    .benefit p {
-      color: var(--gray);
-      font-size: 13px;
-    }
+.glasses {
+  background: #0d1012;
+}
 
-    .contact {
-      text-align: center;
-      background: #15130f;
-      border-top: 1px solid #332b1d;
-    }
+.glasses-banner {
+  max-width: 1000px;
+  min-height: 330px;
+  margin: auto;
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=1400")
+    center/cover no-repeat;
+  border: 1px solid #4d412b;
+}
 
-    .contact h2 {
-      font-family: Georgia, serif;
-      color: var(--gold);
-      font-size: 38px;
-      margin-bottom: 12px;
-    }
+.glasses-banner h2 {
+  font-family: Georgia,serif;
+  color: var(--gold);
+  font-size: clamp(30px,5vw,42px);
+  margin-bottom: 12px;
+}
 
-    .contact p {
-      color: #ccc;
-      margin-bottom: 25px;
-    }
+.glasses-banner p {
+  max-width: 500px;
+  margin-bottom: 25px;
+}
 
-    footer {
-      text-align: center;
-      padding: 28px 15px;
-      border-top: 1px solid #332b1d;
-      color: var(--gray);
-      font-size: 12px;
-    }
+/* PAGOS */
 
-    footer strong { color: var(--gold); }
+.payments {
+  background: #15130f;
+  text-align: center;
+  border-top: 1px solid #3c301e;
+  border-bottom: 1px solid #3c301e;
+}
 
-    .whatsapp {
-      position: fixed;
-      bottom: 22px;
-      right: 22px;
-      z-index: 200;
-      background: #20bd62;
-      color: white;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 27px;
-      box-shadow: 0 4px 15px #0008;
-    }
+.payment-card {
+  max-width: 650px;
+  margin: auto;
+  padding: 35px 25px;
+  background: #090909;
+  border: 1px solid var(--gold);
+}
 
-    @media(max-width: 750px) {
-      header {
-        flex-direction: column;
-        padding: 13px;
-      }
+.addi {
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -3px;
+  margin-bottom: 10px;
+}
 
-      nav {
-        justify-content: center;
-        gap: 15px;
-      }
+.addi span { color: var(--gold); }
 
-      .categories, .benefits {
-        grid-template-columns: 1fr;
-      }
+.payment-card p {
+  color: var(--gray);
+  margin: 12px 0 22px;
+  font-size: 14px;
+}
 
-      section { padding: 65px 6%; }
+.payment-note {
+  font-size: 11px;
+  color: #918b80;
+  margin-top: 15px;
+}
 
-      .hero { min-height: 520px; }
-    }
-  </style>
+/* BENEFICIOS */
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  text-align: center;
+}
+
+.benefit { padding: 20px; }
+
+.benefit h3 {
+  color: var(--gold);
+  margin: 12px 0 8px;
+  font-size: 17px;
+}
+
+.benefit p {
+  color: var(--gray);
+  font-size: 13px;
+}
+
+/* CONTACTO */
+
+.contact {
+  text-align: center;
+  background: #15130f;
+  border-top: 1px solid #332b1d;
+}
+
+.contact h2 {
+  font-family: Georgia,serif;
+  color: var(--gold);
+  font-size: clamp(28px,5vw,40px);
+  margin-bottom: 12px;
+}
+
+.contact p {
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  border-top: 1px solid #332b1d;
+  color: var(--gray);
+  font-size: 12px;
+}
+
+footer strong { color: var(--gold); }
+
+footer .footer-slogan {
+  letter-spacing: 4px;
+  color: var(--gold);
+  margin: 8px 0;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 200;
+  background: #20bd62;
+  color: white;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px #0008;
+}
+
+/* CELULARES */
+
+@media(max-width:750px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .brand img {
+    width: 75px;
+    height: 75px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 13px;
+  }
+
+  nav a { font-size: 11px; }
+
+  .categories, .benefits {
+    grid-template-columns: 1fr;
+  }
+
+  section { padding: 60px 6%; }
+
+  .hero { min-height: 510px; }
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <a href="#inicio" class="brand">
-    ZHAARA
-    <small>PARFUM</small>
+    <img src="LOGO.png" alt="Logotipo oficial ZHAARA PARFUM">
   </a>
 
   <nav>
@@ -370,130 +439,183 @@
     <a href="#perfumes">PERFUMES</a>
     <a href="#decants">DECANTS</a>
     <a href="#gafas">GAFAS</a>
+    <a href="#pagos">PAGOS</a>
     <a href="#contacto">CONTACTO</a>
   </nav>
 </header>
 
 <main>
 
-  <section class="hero" id="inicio">
-    <div class="hero-content">
-      <div class="eyebrow">EXCLUSIVIDAD · ELEGANCIA · ESTILO</div>
-      <h1>ZHAARA PARFUM</h1>
-      <div class="slogan">AN ESSENCE OF MYSTERY</div>
-      <p>Descubre el estilo que te distingue.<br>
-      Perfumes 100 % originales y gafas deportivas premium.</p>
-      <a href="#perfumes" class="btn">DESCUBRIR CATÁLOGO</a>
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <div class="eyebrow">EXCLUSIVIDAD · ELEGANCIA · ESTILO</div>
+
+    <h1>ZHAARA PARFUM</h1>
+
+    <div class="slogan">AN ESSENCE OF MYSTERY</div>
+
+    <p>
+      Descubre el estilo que te distingue.<br>
+      Perfumes 100 % originales y gafas deportivas premium.
+    </p>
+
+    <a href="#perfumes" class="btn">DESCUBRIR CATÁLOGO</a>
+  </div>
+</section>
+
+<section id="perfumes">
+  <div class="section-title">
+    <span>NUESTRA PERFUMERÍA</span>
+    <h2>PERFUMES 100 % ORIGINALES</h2>
+    <div class="gold-line"></div>
+    <p>Encuentra el perfume que representa tu personalidad.</p>
+  </div>
+
+  <div class="categories">
+    <article class="category">
+      <div class="symbol">♛</div>
+      <h3>Perfumes de diseñador</h3>
+      <p>Grandes casas y marcas reconocidas.</p>
+    </article>
+
+    <article class="category">
+      <div class="symbol">✦</div>
+      <h3>Perfumes árabes</h3>
+      <p>Carácter, personalidad y distinción.</p>
+    </article>
+
+    <article class="category">
+      <div class="symbol">◇</div>
+      <h3>Perfumería nicho</h3>
+      <p>Selecciones exclusivas y especiales.</p>
+    </article>
+  </div>
+</section>
+
+<section class="decants" id="decants">
+  <div class="section-title">
+    <span>DESCUBRE Y DISFRUTA</span>
+    <h2>DECANTS</h2>
+    <div class="gold-line"></div>
+    <p>Prueba tus perfumes favoritos en presentaciones prácticas.</p>
+  </div>
+
+  <div class="decant-options">
+    <div class="decant">
+      <strong>5 ml</strong>
+      <span>Presentación pequeña</span>
     </div>
-  </section>
 
-  <section id="perfumes">
-    <div class="section-title">
-      <span>NUESTRA PERFUMERÍA</span>
-      <h2>PERFUMES 100 % ORIGINALES</h2>
-      <div class="gold-line"></div>
-      <p>Encuentra el perfume que representa tu personalidad.</p>
+    <div class="decant">
+      <strong>10 ml</strong>
+      <span>Presentación especial</span>
     </div>
+  </div>
 
-    <div class="categories">
-      <article class="category">
-        <div class="symbol">♛</div>
-        <h3>Diseñador</h3>
-        <p>Perfumes de grandes casas y marcas reconocidas.</p>
-      </article>
+  <a class="btn"
+     href="https://wa.me/573148207169?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20decants.">
+    CONSULTAR DECANTS
+  </a>
+</section>
 
-      <article class="category">
-        <div class="symbol">✦</div>
-        <h3>Árabes</h3>
-        <p>Perfumes con carácter, personalidad y distinción.</p>
-      </article>
+<section class="glasses" id="gafas">
+  <div class="glasses-banner">
+    <div class="eyebrow">ESTILO Y RENDIMIENTO</div>
+    <h2>GAFAS DEPORTIVAS</h2>
 
-      <article class="category">
-        <div class="symbol">◇</div>
-        <h3>Nicho</h3>
-        <p>Propuestas exclusivas para quienes buscan algo especial.</p>
-      </article>
-    </div>
-  </section>
+    <p>
+      Diseño moderno, calidad premium y estilo
+      para acompañarte en cada aventura.
+    </p>
 
-  <section class="decants" id="decants">
-    <div class="section-title">
-      <span>DESCUBRE Y DISFRUTA</span>
-      <h2>DECANTS</h2>
-      <div class="gold-line"></div>
-      <p>Disfruta tus perfumes favoritos en presentaciones prácticas.</p>
-    </div>
-
-    <div class="decant-options">
-      <div class="decant">
-        <strong>5 ml</strong>
-        <span>Presentación pequeña</span>
-      </div>
-
-      <div class="decant">
-        <strong>10 ml</strong>
-        <span>Presentación especial</span>
-      </div>
-    </div>
-
-    <a class="btn" href="https://wa.me/573148207169?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20decants.">
-      CONSULTAR DECANTS
+    <a class="btn"
+       href="https://wa.me/573148207169?text=Hola%2C%20quiero%20conocer%20el%20cat%C3%A1logo%20de%20gafas.">
+      CONSULTAR MODELOS
     </a>
-  </section>
+  </div>
+</section>
 
-  <section class="glasses" id="gafas">
-    <div class="glasses-banner">
-      <div class="eyebrow">ESTILO Y RENDIMIENTO</div>
-      <h2>GAFAS DEPORTIVAS</h2>
-      <p>Diseño moderno, calidad premium y estilo para acompañarte en cada aventura.</p>
-      <a class="btn" href="https://wa.me/573148207169?text=Hola%2C%20quiero%20conocer%20el%20cat%C3%A1logo%20de%20gafas.">
-        VER MODELOS
-      </a>
-    </div>
-  </section>
+<section class="payments" id="pagos">
+  <div class="section-title">
+    <span>FACILIDADES DE COMPRA</span>
+    <h2>COMPRA CON ADDI</h2>
+    <div class="gold-line"></div>
+    <p>Consulta nuestras opciones de pago para adquirir tus productos.</p>
+  </div>
 
-  <section>
-    <div class="section-title">
-      <span>COMPRA CON CONFIANZA</span>
-      <h2>¿POR QUÉ ELEGIRNOS?</h2>
-      <div class="gold-line"></div>
-    </div>
+  <div class="payment-card">
+    <div class="addi">add<span>i</span></div>
 
-    <div class="benefits">
-      <div class="benefit">
-        <div class="symbol">✦</div>
-        <h3>Calidad premium</h3>
-        <p>Productos seleccionados para nuestros clientes.</p>
-      </div>
+    <h3>¡Tus compras también pueden ser con Addi!</h3>
 
-      <div class="benefit">
-        <div class="symbol">✓</div>
-        <h3>Atención personalizada</h3>
-        <p>Te ayudamos a encontrar lo que buscas.</p>
-      </div>
+    <p>
+      Consulta disponibilidad, condiciones y opciones
+      de financiación para tus compras.
+    </p>
 
-      <div class="benefit">
-        <div class="symbol">◆</div>
-        <h3>Pagos con Addi</h3>
-        <p>Consulta las opciones de pago disponibles.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contacto">
-    <h2>VIVE LA EXPERIENCIA ZHAARA</h2>
-    <p>Para más información, escríbenos por WhatsApp.</p>
-    <a class="btn" href="https://wa.me/573148207169?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos.">
-      CONTACTAR POR WHATSAPP
+    <a class="btn"
+       href="https://wa.me/573148207169?text=Hola%2C%20quiero%20comprar%20con%20Addi.">
+      CONSULTAR COMPRA CON ADDI
     </a>
-  </section>
+
+    <div class="payment-note">
+      Sujeto a aprobación y condiciones de Addi.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <span>COMPRA CON CONFIANZA</span>
+    <h2>¿POR QUÉ ELEGIRNOS?</h2>
+    <div class="gold-line"></div>
+  </div>
+
+  <div class="benefits">
+    <div class="benefit">
+      <div class="symbol">✦</div>
+      <h3>Calidad premium</h3>
+      <p>Productos seleccionados para nuestros clientes.</p>
+    </div>
+
+    <div class="benefit">
+      <div class="symbol">✓</div>
+      <h3>Atención personalizada</h3>
+      <p>Te ayudamos a encontrar lo que buscas.</p>
+    </div>
+
+    <div class="benefit">
+      <div class="symbol">◆</div>
+      <h3>Opciones de pago</h3>
+      <p>Consulta nuestros medios de pago y Addi.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <h2>VIVE LA EXPERIENCIA ZHAARA</h2>
+
+  <p>
+    ¿Buscas un perfume o unas gafas deportivas?
+    Escríbenos y te atenderemos personalmente.
+  </p>
+
+  <a class="btn"
+     href="https://wa.me/573148207169?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos.">
+    CONTACTAR POR WHATSAPP
+  </a>
+</section>
 
 </main>
 
 <footer>
-  <strong>ZHAARA PARFUM</strong><br>
-  AN ESSENCE OF MYSTERY<br><br>
-  Perfumes originales · Gafas deportivas premium<br>
+  <strong>ZHAARA PARFUM</strong>
+
+  <div class="footer-slogan">AN ESSENCE OF MYSTERY</div>
+
+  Perfumes originales · Decants · Gafas deportivas premium
+
+  <br><br>
   © 2026 ZHAARA PARFUM. Todos los derechos reservados.
 </footer>
 
@@ -505,3 +627,4 @@
 
 </body>
 </html>
+
